@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-19T01:49:11 IST" name="JenkinsIntegrationSuite" finished-at="2025-10-19T01:49:13 IST" duration-ms="1415">
+    <groups>
+    </groups>
+    <test started-at="2025-10-19T01:49:11 IST" name="SampleAPITests" finished-at="2025-10-19T01:49:13 IST" duration-ms="1415">
+      <class name="com.apitests.SampleAPITest">
+        <test-method signature="verifyGitHubStatusIs200()[pri:0, instance:com.apitests.SampleAPITest@589b3632]" started-at="2025-10-19T01:49:11 IST" name="verifyGitHubStatusIs200" finished-at="2025-10-19T01:49:12 IST" duration-ms="1072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGitHubStatusIs200 -->
+        <test-method signature="verifyInvalidEndpointStatusIs404()[pri:0, instance:com.apitests.SampleAPITest@589b3632]" started-at="2025-10-19T01:49:12 IST" name="verifyInvalidEndpointStatusIs404" finished-at="2025-10-19T01:49:13 IST" duration-ms="328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidEndpointStatusIs404 -->
+      </class> <!-- com.apitests.SampleAPITest -->
+    </test> <!-- SampleAPITests -->
+  </suite> <!-- JenkinsIntegrationSuite -->
+</testng-results>
