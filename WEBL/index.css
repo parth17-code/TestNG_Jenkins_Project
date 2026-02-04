@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #0e0e0e;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #888;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 6rem 2rem;
+  max-width: 1100px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.hero-image {
+  width: 500px;
+  height: 320px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #222;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 3rem;
+  padding: 2rem;
+}
+
+article {
+  border-top: 1px solid #222;
+  padding-top: 1rem;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: #222;
+  margin-bottom: 1rem;
+}
+
+article h3 {
+  font-size: 1.2rem;
+}
+
+article span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+footer {
+  padding: 4rem 2rem;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #555;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+footer a:hover {
+  color: #888;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: #222;
+  margin-bottom: 1rem;
+  overflow: hidden; /* important */
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* fills the div */
+  object-position: center; /* centers image */
+  display: block;
+}
