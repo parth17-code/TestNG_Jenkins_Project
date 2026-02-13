@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Traffic Light</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Traffic Light</h2>
+
+<div class="traffic-light">
+    <div id="red" class="light"></div>
+    <div id="yellow" class="light"></div>
+    <div id="green" class="light"></div>
+</div>
+
+<button onclick="changeLight()">Change Light</button>
+
+<script>
+let current = 0;
+
+function changeLight() {
+    const lights = ["red", "yellow", "green"];
+    
+    // Turn off all lights
+    for (let i = 0; i < lights.length; i++) {
+        document.getElementById(lights[i]).style.background = "gray";
+    }
+
+    // Turn on current light
+    document.getElementById(lights[current]).style.background = lights[current];
+
+    current++;
+    if (current > 2) {
+        current = 0;
+    }
+}
+</script>
+
+</body>
+</html>

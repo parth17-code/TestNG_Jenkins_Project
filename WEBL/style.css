@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    font-family: Arial;
+}
+
+.traffic-light {
+    width: 100px;
+    background: black;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    background: gray;
+    border-radius: 50%;
+    margin: 10px auto;
+}
