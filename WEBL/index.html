@@ -7,11 +7,63 @@
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+<script>
+
+  function changeText() {
+    document.getElementById("demoText").innerText =
+      "The text has been changed.";
+  }
+
+  let count = 1;
+  function addItem() {
+    let li = document.createElement("li");
+    li.innerText = "Item " + count;
+    document.getElementById("dynamicList").appendChild(li);
+    count++;
+  }
+
+
+  function removeItem() {
+    let list = document.getElementById("dynamicList");
+    if (list.lastChild) {
+      list.removeChild(list.lastChild);
+      count--;
+    }
+  }
+
+  function changeColor(color) {
+    document.body.style.backgroundColor = color;
+  }
+</script>
+
 <body>
   <header>
     <h1>Parth Mohite</h1>
     <p>IT student at VESIT , Chembur.</p>
   </header>
+
+
+<section style="padding:2rem;">
+
+
+  <h2>DOM Practical</h2>
+  <p id="demoText">This is original text.</p>
+  <button onclick="changeText()">Change Text</button>
+
+  <hr style="margin:1rem 0;">
+
+  <ul id="dynamicList"></ul>
+  <button onclick="addItem()">Add Item</button>
+  <button onclick="removeItem()">Remove Last Item</button>
+
+  <hr style="margin:1rem 0;">
+
+
+  <button onclick="changeColor('black')">Black</button>
+  <button onclick="changeColor('green')">Green</button>
+
+</section>
 
   <main>
     <section class="hero">
