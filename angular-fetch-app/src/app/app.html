@@ -1,0 +1,37 @@
+<style>
+  :host {
+    display: block;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1rem;
+  }
+</style>
+
+<div class="app-container">
+  <h1>{{ title() }}</h1>
+  <p class="subtitle">Fetching data with Angular</p>
+  
+  <app-items></app-items>
+</div>
+
+<router-outlet />
